@@ -1,22 +1,101 @@
-<!doctype html>
 <html>
-    <head>
-        <link href="/ui/style.css" rel="stylesheet" />
-    </head>
-    <body>
-        <div class="container">
-        <div class="center">
-            <img src="http://images1.houstonpress.com/imager/u/original/6372280/powerpuffgirls1.jpg" id="img" class="img-medium"/>
-        </div>
-        <br>
-        <hr/>
-        <h1>personal</h1>
-        <div>its awesome</div>
-        <h1>professional</h1>
-        <div>best cartoon</div>
-        </div>
-        <div class="footer"></div>
-        <script type="text/javascript" src="/ui/main.js">
-        </script>
-    </body>
+<title>Monisha's Blog</title>
+
+<style>
+
+ul { id=menu
+    list-style-type: none;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+
+.Slides {height:190px;
+width:1500px;
+
+} 
+
+.mySlides {height:380px;
+width:600px;
+display:none;
+margin-top: 0px;
+float:left;}
+
+.right {
+    float: right;
+    width: 700px;
+    margin-right: 20px
+    padding: 10px;
+}
+
+h1{
+ font-family:"Comic Sans MS", cursive, sans-serif}
+
+p.se {
+    font-family:"Comic Sans MS", cursive, sans-serif
+}
+
+</style>
+<body>
+
+
+
+<ul >
+  <li><a href="blog.html">Home</a></li>
+  <li><a href="ab.html">My Posts</a></li>
+  <li><a href="abt.html">About Me</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+<img class="Slides" src="C:\Users\Admin\Desktop\step.jpg" style="width:100%">
+
+<div style="max-width:1500px">
+  <img class="mySlides" src="C:\Users\Admin\Desktop\one.jpg" >
+  <img class="mySlides" src="C:\Users\Admin\Desktop\two.jpg" >
+  <img class="mySlides" src="C:\Users\Admin\Desktop\three.png" >
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); 
+}
+</script>
+
+<div class="right">
+<h1>Hello!</h1>
+<p class="se">My blog is an outlet for my thoughts.Deeply fascinated by technology, i write about new innovations and updates in the techie world.. Stay tuned and share your views!.
+<br>-Monisha</p>
+
+</div>
+</body>
 </html>
