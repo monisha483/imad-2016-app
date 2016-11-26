@@ -66,11 +66,11 @@ app.get('/abt', function(req,res){
 })
 
 app.get('/myarticle', function(req,res){
-     res.sendFile(path.join(__dirname, '', 'contact.html'));
+     res.sendFile(path.join(__dirname, '', 'myarticle.html'));
 })
 
 app.get('/post1', function(req,res){
-     res.sendFile(path.join(__dirname, '', 'contact.html'));
+     res.sendFile(path.join(__dirname, '', 'post1.html'));
 })
 
 app.get('/ui/style.css', function (req, res) {
