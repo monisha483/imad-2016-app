@@ -65,7 +65,11 @@ app.get('/abt', function(req,res){
      res.sendFile(path.join(__dirname, '', 'abt.html'));
 })
 
-app.get('/contact', function(req,res){
+app.get('/myarticle', function(req,res){
+     res.sendFile(path.join(__dirname, '', 'contact.html'));
+})
+
+app.get('/post1', function(req,res){
      res.sendFile(path.join(__dirname, '', 'contact.html'));
 })
 
